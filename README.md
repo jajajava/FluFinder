@@ -3,7 +3,20 @@ FluFinder is a web app that allows users to view an interactive map or one of se
 <br>
 <br>
 
-**Project design diagram:**
+**NOTE: This repository is a public copy of the private repo where our group originally worked. The commit history is missing because of the transfer. We had permission to create and share this public version.**
+
+
+## Team members:
+
+|    Username    |            Email            |
+| :------------: | :-------------------------: |
+|    jajajava    | ds29123@georgiasouthern.edu |
+|                | sb35329@georgiasouthern.edu |
+|                | kf12106@georgiasouthern.edu |
+|                | ma17700@georgiasouthern.edu |
+|                | om00913@georgiasouthern.edu |
+
+## Project design diagram
 
 ![alt text](/images/image.png)
 
@@ -14,17 +27,3 @@ may benefit from increased monitoring and resource allocation.
 - Approximately 60% of outbreaks affect poultry hosts, while the remaining 40% involve non-poultry hosts.
 
 - Outbreak frequency and severity are lowest during the summer months, with July typically showing the fewest and least severe cases nationwide. This trend can help improve preparedness planning.
-
-<br>
-<br>
-
-# Team members:
-
-|    Username    |            Email            |
-| :------------: | :-------------------------: |
-|    jajajava    | ds29123@georgiasouthern.edu |
-|  BlueRogue12   | sb35329@georgiasouthern.edu |
-|   Kaifang02    | kf12106@georgiasouthern.edu |
-|    MAaron45    | ma17700@georgiasouthern.edu |
-| oscarmejia1776 | om00913@georgiasouthern.edu |
-<br>
