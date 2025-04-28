@@ -34,7 +34,6 @@ __pycache__/
 *.njsproj
 *.sln
 *.sw?
-image.png
 
 # Google
 google_backend.json

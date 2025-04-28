@@ -5,7 +5,7 @@ FluFinder is a web app that allows users to view an interactive map or one of se
 
 **Project design diagram:**
 
-![alt text](image.png)
+![alt text](/images/image.png)
 
 ## Findings with FluFinder
 - Outbreaks are most commonly reported in the Northwestern US, suggesting a regional hotspot that
