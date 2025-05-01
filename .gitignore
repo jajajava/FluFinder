@@ -22,7 +22,6 @@ data.csv
 flu_finder_src/data.csv
 .env
 __pycache__/
-*.html
 
 # Editor directories and files
 .vscode/*
