@@ -1,8 +1,12 @@
 import pandas as pd
 from tabulate import tabulate
-from data_fetcher import get_reversed_dataframe
-from db_methods import *
 from datetime import timedelta
+try: # Render requires a relative path, GitHub Actions requires an absolute path
+    from .data_fetcher import get_reversed_dataframe
+    from .db_methods import *
+except ImportError:
+    from data_fetcher import get_reversed_dataframe
+    from db_methods import *
 
 #------------------------------------------- National Methods -----------------------------------------#
 

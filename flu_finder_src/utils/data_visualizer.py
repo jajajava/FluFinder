@@ -1,7 +1,11 @@
 import pandas as pd
 import plotly.express as px
-from db_methods import *
-from queries import *
+try: # Render requires a relative path, GitHub Actions requires an absolute path
+    from .db_methods import *
+    from .queries import *
+except ImportError:
+    from db_methods import *
+    from queries import *
 import sys
 
 df = get_db()
