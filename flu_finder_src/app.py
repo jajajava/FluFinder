@@ -25,7 +25,7 @@ def create_app():
                 "http://127.0.0.1:5173",
                 "http://localhost:5020",
                 "http://127.0.0.1:5020",
-                "https://flufinder.onrender.com"
+                "https://flu-finder.onrender.com"
             ],
             "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
             "allow_headers": ["Content-Type", "Authorization"],
