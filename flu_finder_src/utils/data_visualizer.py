@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.express as px
-from .db_methods import *
-from .queries import *
+from db_methods import *
+from queries import *
 import sys
 
 df = get_db()

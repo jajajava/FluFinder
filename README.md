@@ -20,7 +20,7 @@ FluFinder is a web app that allows users to view an interactive map or one of se
 
 ![alt text](/images/image.png)
 
-## Findings with FluFinder
+## Findings with FluFinder - April 2025
 - Outbreaks are most commonly reported in the Northwestern US, suggesting a regional hotspot that
 may benefit from increased monitoring and resource allocation.
 
