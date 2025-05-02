@@ -3,7 +3,7 @@ import os
 import json
 import base64
 from google.oauth2.service_account import Credentials
-from .data_fetcher import get_sorted_dataframe_from_link
+from data_fetcher import get_sorted_dataframe_from_link
 from pathlib import Path
 import pandas as pd
 

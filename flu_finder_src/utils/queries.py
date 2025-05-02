@@ -1,7 +1,7 @@
 import pandas as pd
 from tabulate import tabulate
-from .data_fetcher import get_reversed_dataframe
-from .db_methods import *
+from data_fetcher import get_reversed_dataframe
+from db_methods import *
 from datetime import timedelta
 
 #------------------------------------------- National Methods -----------------------------------------#
