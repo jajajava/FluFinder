@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import sys
-from utils.db_methods import update_db
+from db_methods import update_db
 
 # This script is used to update the database on a cron job
 # It is called by the cron job every day at 5:00 PM (Set up in Render)
