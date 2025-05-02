@@ -25,5 +25,6 @@ jobs:
       - name: Run daily method
         env:
           GOOGLE_CREDS_B64: ${{ secrets.GOOGLE_CREDS_B64 }}
+          SHEET_ID_DATA: ${{ secrets.SHEET_ID_DATA }}
         run: |
           python flu_finder_src/utils/cronjob_update_db.py
