@@ -1,0 +1,27 @@
+name: Daily Scheduled Job
+
+on:
+  schedule:
+    - cron: '15 22 * * *'  # Adjust this for your desired time (this runs at 12:00 UTC every day)
+  workflow_dispatch:       # (Optional) lets you trigger manually from GitHub UI
+
+jobs:
+  run-daily-method:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      # - name: Install dependencies
+      #   run: |
+      #     pip install -r requirements.txt
+
+      - name: Run daily method
+        run: |
+          python flu_finder_src/utils/cronjob_update_db.py
