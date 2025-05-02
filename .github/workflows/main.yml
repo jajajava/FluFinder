@@ -22,6 +22,14 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      - name: Debug env vars (temp)
+        env:
+          GOOGLE_CREDS_B64: ${{ secrets.GOOGLE_CREDS_B64 }}
+          SHEET_ID_DATA: ${{ secrets.SHEET_ID_DATA }}
+        run: |
+          echo "GOOGLE_CREDS_B64 length: ${#GOOGLE_CREDS_B64}"
+          echo "SHEET_ID_DATA: $SHEET_ID_DATA"
+
       - name: Run daily method
         env:
           GOOGLE_CREDS_B64: ${{ secrets.GOOGLE_CREDS_B64 }}
