@@ -23,5 +23,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run daily method
+        env:
+          GOOGLE_CREDS_B64: ${{ secrets.GOOGLE_CREDS_B64 }}
         run: |
           python flu_finder_src/utils/cronjob_update_db.py
