@@ -13,7 +13,7 @@ FluFinder is a web app that allows users to view an interactive map or one of se
 |    jajajava    | ds29123@georgiasouthern.edu |
 |  BlueRogue12   | sb35329@georgiasouthern.edu |
 |   kaifang02    | kf12106@georgiasouthern.edu |
-|                | ma17700@georgiasouthern.edu |
+|    MAaron45    | ma17700@georgiasouthern.edu |
 | oscarmejia1776 | om00913@georgiasouthern.edu |
 
 ## Project design diagram
