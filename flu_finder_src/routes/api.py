@@ -10,9 +10,6 @@ import numpy as np
 # Create a Blueprint for API routes
 api_bp = Blueprint('api', __name__, url_prefix='/api')
 
-# For use in other calls
-df = data.get_db()
-
 class NumpyJSONEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, np.ndarray):
@@ -28,6 +25,7 @@ class NumpyJSONEncoder(json.JSONEncoder):
 def fetch_data():
     try:
         print("Fetching CDC data...")
+        df = data.get_db()
         print("DataFrame columns:", df.columns.tolist())
         print("DataFrame shape:", df.shape)
         
@@ -120,8 +118,8 @@ def county_data(state, county):
 @api_bp.route('/map/initialize', methods=['GET'])
 def initialize_map_endpoint():
     try:
-        # Get the outbreak data (commented out; fetches data at load)
-        # df = data.get_db()
+        # Get the outbreak data
+        df = data.get_db()
         # print("Successfully fetched database")
 
         # Create time frame if argument is passed
@@ -194,8 +192,7 @@ def initialize_map_endpoint():
 @api_bp.route('/map/data', methods=['GET'])
 def map_data():
     try:
-        # Commented out; fetched on load
-        # df = data.get_db()
+        df = data.get_db()
         # print("DataFrame columns:", df.columns.tolist())  # Debug print
 
         # Convert DataFrame to GeoJSON format
@@ -318,6 +315,9 @@ def get_choropleth_map():
 # Endpoint for interactive Plotly charts
 @api_bp.route('/chart', methods=['GET'])
 def create_graph():
+    # Get data
+    df = data.get_db()
+    
     # Mapping chart types to functions
     chart_options = {
         'hbar_sizes': dv.get_horizontal_comparison_flock_sizes,
