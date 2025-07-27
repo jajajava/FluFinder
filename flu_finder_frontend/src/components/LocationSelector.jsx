@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, FormControl, InputLabel, Select, MenuItem, useMediaQuery } from '@mui/material';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import { useLocation } from '../context/LocationContext';

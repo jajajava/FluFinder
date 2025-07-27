@@ -1,5 +1,4 @@
-// src/components/Sidebar.jsx
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Box,
   List,

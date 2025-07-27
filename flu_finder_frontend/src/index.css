@@ -54,6 +54,30 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+#pageHeader {
+  display: flex;
+}
+
+#noMoreUpdatesDiv {
+background: #2159d8;
+  position: fixed;
+  top: 3.75rem;
+  width: 100vw;
+  z-index: 1000;
+  padding-left: 10px;
+  margin: 0;
+}
+
+#noMoreUpdatesDiv > h2 {
+  margin: 0;
+  font-size: large;
+}
+
+#noMoreUpdatesDiv > h2 > a {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.87);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     /* color: #213547; */  /* This line makes the font dark grey on light mode, even though the background stays dark grey too */

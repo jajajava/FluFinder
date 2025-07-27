@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Box, Typography, IconButton, Drawer, useMediaQuery } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import LocationSelector from "./LocationSelector";
