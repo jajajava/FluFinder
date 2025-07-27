@@ -1,4 +1,3 @@
-import React from "react";
 import MapCanvas from "./MapCanvas";
 import LatestInfections from "./LatestInfections";
 import BirdFluResources from "./BirdFluResources";

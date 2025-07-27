@@ -36,3 +36,6 @@ __pycache__/
 
 # Google
 google_backend.json
+
+# Personal note
+DEV.md

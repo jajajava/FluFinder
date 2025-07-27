@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Box, CircularProgress, Typography } from '@mui/material';
 import Plot from 'react-plotly.js';
 import { useLocation } from '../context/LocationContext';

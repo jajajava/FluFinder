@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Box, CircularProgress, Alert, Snackbar, useMediaQuery } from "@mui/material";
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+import NoMoreUpdates from "./components/NoMoreUpdates";
 import Navbar from "./components/Navbar";
 import LatestInfections from "./components/LatestInfections";
 import ChoroplethMap from "./components/ChoroplethMap";
@@ -9,7 +10,6 @@ import ChartView from "./components/ChartView";
 import BirdFluResources from "./components/BirdFluResources";
 import { LocationProvider, useLocation } from "./context/LocationContext";
 import { TimePeriodProvider } from "./context/TimePeriodContext";
-import TimePeriodSelector from "./components/TimePeriodSelector";
 
 const MainContent = () => {
   const { loading, error } = useLocation();
@@ -35,12 +35,15 @@ const MainContent = () => {
 
   return (
     <>
+    <div id="pageHeader">
       <Navbar
         view={view}
         onViewChange={handleViewChange}
         chartType={chartType}
         onChartTypeChange={handleChartTypeChange}
       />
+      <NoMoreUpdates />
+    </div>
       <Box
         sx={{
           display: "flex",
@@ -51,7 +54,7 @@ const MainContent = () => {
           maxWidth: "100%",
           width: "100%",
           margin: "0",
-          marginTop: isMobile ? "3.75rem" : "3.75rem",
+          marginTop: isMobile ? "8.75rem" : "3.75rem",
           boxSizing: "border-box",
           position: "relative",
         }}
@@ -86,7 +89,7 @@ const MainContent = () => {
             boxShadow: isMobile ? "none" : "0 0.25rem 0.5rem rgba(0, 0, 0, 0.2)",
             backgroundColor: "#1e1e1e",
             overflow: "hidden",
-            marginTop: "0",
+            marginTop: "3%",
             "& .map-container": {
               width: "100%",
               height: "100%",
